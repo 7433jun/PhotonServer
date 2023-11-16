@@ -5472,10 +5472,11 @@ MonoBehaviour:
   Group: 0
   prefixField: -1
   Synchronization: 3
-  OwnershipTransfer: 0
+  OwnershipTransfer: 1
   observableSearch: 2
   ObservedComponents:
   - {fileID: 4225746016664991060}
+  - {fileID: 8876602428503232348}
   - {fileID: 2346809640211312002}
   sceneViewId: 0
   InstantiationId: 0
@@ -5492,6 +5493,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be70860985bbbaa4a9d79b206e816e35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nickName: {fileID: 266709541984835065}
+  score: 0
+  mouseX: 0
+  rotateSpeed: 500
+  speed: 5
+  direction: {x: 0, y: 0, z: 0}
+  temporaryCamera: {fileID: 4132719702342195977}
 --- !u!54 &6514518282966677186
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5560,9 +5568,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 1
+  m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &2346809640211312002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5579,7 +5587,7 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters: []
   m_SynchronizeLayers:
-  - SynchronizeType: 0
+  - SynchronizeType: 2
     LayerIndex: 0
 --- !u!1 &9112125363582173983
 GameObject:
